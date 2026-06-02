@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parshwa Shah Portfolio</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#1f4e79;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#1f4e79;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    background:#e9ecef;
+    margin:5px 0;
+    padding:10px;
+    border-radius:5px;
+}
+
+.project{
+    border-left:4px solid #1f4e79;
+    padding-left:15px;
+    margin-bottom:15px;
+}
+
+button{
+    background:#1f4e79;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#222;
+    color:white;
+}
+
+.dark-mode h2{
+    color:#4da6ff;
+}
+
+.dark-mode li{
+    background:#333;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1 id="name">Parshwa Shah</h1>
+    <p>Cloud & Application Development Student</p>
+
+    <button onclick="toggleDarkMode()">
+        Dark Mode
+    </button>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a second-year Cloud and Application Development student
+        at JG University. I am passionate about cloud computing,
+        web development, and learning new technologies.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML (Basic)</li>
+        <li>CSS (Basic)</li>
+        <li>JavaScript (Basic)</li>
+        <li>Python (Basic)</li>
+        <li>Java (Basic)</li>
+        <li>MySQL (Basic)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>Personal website showcasing my projects and skills.</p>
+    </div>
+
+    <div class="project">
+        <h3>Student Management System</h3>
+        <p>Basic application for managing student information.</p>
+    </div>
+
+    <div class="project">
+        <h3>Weather App</h3>
+        <p>Weather application using API integration.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <p><strong>JG University</strong></p>
+    <p>Cloud and Application Development</p>
+    <p>CGPA: 6.4</p>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: parshwa7956@gmail.com</p>
+    <p>Location: Ahmedabad, Gujarat</p>
+    <p>Phone: 9327576114</p>
+</section>
+
+<script>
+alert("Welcome to Parshwa Shah's Portfolio!");
+
+document.getElementById("name").addEventListener("click", function(){
+    alert("Hello! I am Parshwa Shah.");
+});
+
+function toggleDarkMode(){
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
